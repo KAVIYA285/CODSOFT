@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int i,a,g,N=11;
+    
+for(i=0;i<=5;i++)
+  cout<<(g=rand() % N)<<" ";
+
+for(i=0;i<=5;i++)
+{
+cout << "\n Enter a guess number(limit :10): ";
+cin>>a;   
+if (a==g)
+    cout<<"\n Hooray! great guess";
+if(a==g)
+    break;
+else if(a>=11)
+    cout<<"INVALID INPUT";
+else 
+    cout<<("\n Hurray! find it fast");
+    if(a>g)
+        cout<<"\n guess is too high";
+    
+    if(a<g)
+        cout<<"\n guess is too low";
+}
+}
