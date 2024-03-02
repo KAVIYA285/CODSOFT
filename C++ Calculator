@@ -1,0 +1,51 @@
+#include <iostream>
+using namespace std;
+class cal
+{
+private:
+    int p,q,r,s,x,y,z;
+public:
+    void getdata();
+    void calculate();
+};
+void cal::getdata()
+{
+cout<<"\n Enter first number:";
+cin>>x;
+cout<<"\n Enter second number";
+cin>>y;
+cout<<"\n Enter your choice:(1.add/2.sub/3.mul/4.div)";
+cin>>z;
+}
+void cal::calculate()
+{
+switch(z)
+{
+case 1:
+      p=x+y;
+        cout<<"\n Addition="<<x<<"+"<<y<<"="<<p;
+      break;
+case 2:
+      q=x-y;
+        cout<<"\n Subtraction="<<x<<"-"<<y<<"="<<q;
+      break;
+case 3:
+      r=x*y;
+        cout<<"\n Multiplication="<<x<<"*"<<y<<"="<<r;
+      break;
+case 4:
+      s=x/y;
+        cout<<"\n Division="<<x<<"/"<<y<<"="<<s;
+      break;
+default:
+        cout<<"INVALID INPUT";
+}
+  
+}
+
+int main()
+{
+cal e1;
+e1.getdata();
+e1.calculate();
+}
